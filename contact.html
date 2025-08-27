@@ -15,13 +15,13 @@
 <body>
 
     <a href="accueil.html">
-      <button class="btn-back btn-lg slide-in">
+      <button class="btn-back btn-lg fade-in">
           Retour
         </button>
       </a>
 
       <!-- Bouton Burger -->
-    <div class="burger-menu slide-in" id="burgerMenu">
+    <div class="burger-menu fade-in mt-4" id="burgerMenu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -43,36 +43,51 @@
 
             <div class="row justify-content-center">
               <div class="col-md-4 text-center custom-bg p-3 slide-in">
-                <h1 class="text-dark custom-title1 justify-content-center">Me contacter</h1> <!--Titre-->
+                <h1 class="text-dark custom-title1 justify-content-center">Contact</h1>
               </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center mt-5 p-3 fade-in">
-                  <p class="text-light fs-1 custom-title3 justify-content-center typewriter">Si vous souhaitez prendre contact avec moi, je vous propose de m'envoyer un mail</p> <!--Intro-->
+                <div class="col-md-6 mx-auto text-center mt-5 fade-in">
+                  <p class="text-light fs-1 mt-5">Vous trouverez dans cette page différents moyens de me trouver et/ou me contacter</p>
                 </div>
               </div>
 
 
-        <div class="row custom-margin d-flex align-items-center"> <!--1er site-->
+        <div class="row custom-margin d-flex align-items-center"> 
 
-            <div class="col-md-8 offset-2 custom-bg p-3 slide-in" id="formulaire">
-                <h2 class="text-dark custom-title2 text-center mt-3">Formulaire Mail</h3>
+            <div class="row justify-content-center mt-5">
+  <div class="col-md-6 text-center custom-bg p-4 slide-in" id="formulaire">
 
-                <form action="send_mail.php" method="POST">
-                    <label class="" for="name">Nom :</label><br>
-                    <input type="text" id="name" name="name" required>
-        
-                    <label class="" for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label class="" for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-        
-                    <button type="submit">Envoyer</button>
-                </form>
+    <!-- Email -->
+    <div class="d-flex justify-content-center align-items-center mb-4">
+      <i class="fas fa-envelope fa-5x me-3 text-dark"></i>
+      <a href="#" id="email-link" class="text-dark custom-title1" style="font-size: 40px;">[email protected]</a>
+    </div>
 
-            </div>
+  <script>
+    const user = "mateo.teixeira.mt.pro";
+    const domain = "gmail.com";
+    const emailLink = document.getElementById("email-link");
+    emailLink.href = `mailto:${user}@${domain}`;
+    emailLink.textContent = `${user}@${domain}`;
+  </script>
+
+    <!-- LinkedIn -->
+    <div class="d-flex justify-content-center align-items-center mb-4">
+      <i class="fab fa-linkedin fa-5x me-3 text-primary"></i>
+      <a href="https://www.linkedin.com/in/mateo-teixeira/" target="_blank" class="text-dark custom-title1" style="font-size: 40px;">Mon LinkedIn</a>
+    </div>
+
+    <!-- CV -->
+    <div class="d-flex justify-content-center align-items-center mb-4">
+      <i class="fas fa-file-pdf fa-5x me-3 text-danger"></i>
+      <a href="CVMateoTeixeira2025.pdf" target="_blank" class="text-dark custom-title1" style="font-size: 40px;">Télécharger mon CV</a>
+    </div>
+  </div>
+</div>
+
+
         </div>  
 </div>	
 
