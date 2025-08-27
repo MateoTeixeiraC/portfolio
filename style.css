@@ -6,8 +6,7 @@ margin: 0;
     text-align:justify;
     margin:0;
     padding:0;
-background-color:#1F2036 ;
-        
+background-color:#1F2036 ;        
 }
 
 a {
@@ -53,8 +52,16 @@ form button:hover {
 
 /* Classes */
 
+.main-content {
+    margin-top: 100px;
+}
+
 .container-fluid{
     background-color:#1F2036 ;
+}
+
+.intro{
+    margin-bottom: 20px;
 }
 
 .col-md-6{
@@ -73,6 +80,7 @@ form button:hover {
 
 .custom-title3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
     /*font-weight: bolder;*/
 }
 
@@ -106,7 +114,6 @@ form button:hover {
 }
 
 .custom-text{
-    height: 300px;
 }
 
 .custom-text2{
@@ -123,8 +130,9 @@ form button:hover {
     top: 30px; /* Espacement du haut */
     left: 20px; /* Espacement de la gauche */
     z-index: 1000; /* Assure que le bouton reste au-dessus des autres éléments */
-    color: white;
-    background-color: darkblue !important;
+    color: darkblue;
+    font-weight: bold;
+    background-color: white !important;
     padding: 10px 20px !important; /* Espacement interne */
     border: none !important;
      border-radius: 30px !important; /* Coins arrondis */
@@ -133,8 +141,8 @@ form button:hover {
 }
 
 .btn-back:hover {
-    background-color: #9ADBBC !important; /* Changer la couleur de fond au survol (bleu plus foncé) */
-    color: #FAFAC9 !important; /* Changer la couleur du texte au survol (jaune) */
+    background-color: darkblue !important; /* Changer la couleur de fond au survol (bleu plus foncé) */
+    color:white !important; /* Changer la couleur du texte au survol (jaune) */
     border: none;
   }
 
@@ -285,14 +293,14 @@ form button:hover {
     opacity: 1;
 }
 
+
+
 /* IDs */
 
-
-
 #nom  {
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
     margin-bottom:20px;
+    padding: 10px;
     border-radius: 20px;
     background-color: #9ADBBC;
 }
@@ -300,15 +308,15 @@ form button:hover {
 #bio {
     font-size: 25px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
+    padding: 5px;
     margin-bottom:100px;
     border-radius: 10px;
     background-color: #9ADBBC;
 }
 
 #pfp {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
     height: 300px;
     border-radius: 30px;
     background-color: #9ADBBC;
@@ -317,7 +325,7 @@ form button:hover {
 #signature {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: wheat;
+    color: white;
     margin-left: 30px;
 }
 
@@ -326,7 +334,7 @@ form button:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -60px;
     margin-bottom: 60px;
-    color: wheat;
+    color: white;
 }
 
 
