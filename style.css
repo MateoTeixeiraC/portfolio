@@ -1,0 +1,389 @@
+body, html {
+padding: 0;
+margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    text-align:justify;
+    margin:0;
+    padding:0;
+background-color:#1F2036 ;
+        
+}
+
+a {
+    display: block;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Classes */
+
+.container-fluid{
+    background-color:#1F2036 ;
+}
+
+.col-md-6{
+    background-color: #1F2036 ;
+}
+
+.custom-title1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.custom-title2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.custom-title3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-weight: bolder;*/
+}
+
+.imgtemplate {
+    width: 300px;
+    height: 300px;
+}
+
+.custom-category{
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
+}
+
+.custom-category2{
+    margin-bottom: 30px !important;
+    border-radius: 25px;
+    background-color: #9ADBBC;
+}
+
+.custom-category2 .imgtemplate {
+    transition: transform 0.3s ease; /* Transition fluide pour l'agrandissement */
+}
+
+.custom-category2 .imgtemplate:hover {
+    transform: scale(1.1); /* L'image va grossir de 10% lors du survol */
+}
+
+.custom-margin {
+    margin-top: 80px !important;   /* Marge en haut de 30px */
+    margin-bottom: 150px !important; /* Marge en bas de 20px */
+}
+
+.custom-text{
+    height: 300px;
+}
+
+.custom-text2{
+    height: 350px;
+}
+
+
+.boutonretour{
+    height: 50px;
+}
+
+.btn-back{
+    position: fixed;
+    top: 30px; /* Espacement du haut */
+    left: 20px; /* Espacement de la gauche */
+    z-index: 1000; /* Assure que le bouton reste au-dessus des autres éléments */
+    color: white;
+    background-color: darkblue !important;
+    padding: 10px 20px !important; /* Espacement interne */
+    border: none !important;
+     border-radius: 30px !important; /* Coins arrondis */
+      font-size: 25px !important; /* Taille du texte */
+      transition: background-color 0.3s, color 0.3s !important; /* Transition douce pour les changements de couleur */
+}
+
+.btn-back:hover {
+    background-color: #9ADBBC !important; /* Changer la couleur de fond au survol (bleu plus foncé) */
+    color: #FAFAC9 !important; /* Changer la couleur du texte au survol (jaune) */
+    border: none;
+  }
+
+.custom-bg{
+    background-color: #9ADBBC;
+    border-radius: 20px;
+}
+
+.custom-titlemargin{
+    margin-top: 50px;
+}
+
+.custom-image{
+    width: 1000px;
+    border-radius: 20px;
+}
+
+/* Style du bouton burger */
+.burger-menu {
+    position: fixed;
+    top: 35px;
+    right: 60px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 6000;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Style du menu */
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Caché par défaut */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 5000;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Ajout de la classe active pour afficher le menu */
+.nav-active {
+    right: 0;
+}
+
+/* Animation du bouton burger lorsqu'il est actif */
+.burger-menu.active .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg); /* Descend plus avant la rotation */}
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg); /* Monte plus avant la rotation */}
+
+
+/*Effet texte tappé*/
+.typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        /*letter-spacing: .15em;  Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+
+/* Applique une animation fade-in aux div */
+.fade-in {
+    opacity: 0; /* Rendre le div invisible au début */
+    animation: fadeInEffect 2s forwards; /* Appliquer l'animation avec un délai de 2 secondes */
+}
+
+/* Définir l'animation */
+@keyframes fadeInEffect {
+    0% { opacity: 0; } /* Invisible au départ */
+    100% { opacity: 1; } /* Complètement visible à la fin de l'animation */
+}
+
+
+/* Style de base pour l'effet de slide-in */
+.slide-in {
+    opacity: 0; /* Rendre invisible au départ */
+    transform: translateX(-100%); /* Commence à gauche de l'écran */
+    animation: slideInEffect 2s forwards;
+}
+
+/* Définir l'animation pour l'effet slide-in */
+@keyframes slideInEffect {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Hors de l'écran */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* À sa position finale */
+    }
+}
+
+/* Initialement, rendre les div invisibles */
+.scroll-fade {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* Quand l'élément devient visible (ajouté via JavaScript) */
+.scroll-fade.visible {
+    opacity: 1;
+}
+
+/* IDs */
+
+
+
+#nom  {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom:20px;
+    border-radius: 20px;
+    background-color: #9ADBBC;
+}
+
+#bio {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom:100px;
+    border-radius: 10px;
+    background-color: #9ADBBC;
+}
+
+#pfp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #9ADBBC;
+}
+
+#signature {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: wheat;
+    margin-left: 30px;
+}
+
+#signaturedev {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    color: wheat;
+}
+
+
+#scrollTop {
+    position: fixed;
+    bottom: 40px;
+    right: 45px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid #1F2036 !important; /* Bordure gauche invisible */
+    border-right: 30px solid #1F2036 !important; /* Bordure droite invisible */
+    border-top: 0 !important; /* Bordure droite invisible */
+    border-bottom: 50px solid #9ADBBC; /* La couleur du triangle */
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0; /* Invisible au départ */
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Transition fluide pour l'apparition */
+    z-index: 1000;
+    transform: translateY(20px);
+}
+
+#scrollTop.show {
+    opacity: 1; /* Rendre le bouton visible */
+    transform: translateY(0); 
+}
+
+#scrollTop:hover {
+    transform: scale(1.5); 
+}
+
+#scrollTop:focus {
+    outline: none; /* Enlever le contour lors du focus */
+}
+
+#formulaire {
+    margin-bottom: 40px;
+}
+
+/* Style du bouton */
+#download-btn {
+    background-color: #9ADBBC; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+#download-btn:hover {
+    background-color: #45a049; /* Couleur légèrement plus foncée quand on survole */
+}
+
+#download-btn i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+}
+
