@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadBtn.addEventListener('click', function(e) {
             e.preventDefault(); // Empêche le comportement par défaut du bouton
             
-            const pdfUrl = 'CVMateoTeixeira2025.pdf';
+            const pdfUrl = 'CV_Mateo_Teixeira_2025.pdf';
             const fileName = 'CV_Mateo_Teixeira_2025.pdf';
             
             // Fonction pour télécharger le fichier
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Version alternative plus simple si vous préférez
 function downloadPDF() {
-    const pdfUrl = 'CVMateoTeixeira2025.pdf';
+    const pdfUrl = 'CV_Mateo_Teixeira_2025.pdf';
     const fileName = 'CV_Mateo_Teixeira_2025.pdf';
     
     try {
