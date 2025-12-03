@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéo Teixeira - Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/SignatureFull.png" alt="Matéo Teixeira" style="width: 30%;">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Accueil</a>
+                <a href="dev.html">Développement</a>
+                <a href="crea.html">Création Numérique</a>
+                <a href="com.html">Communication</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn-cv" id="downloadBtn">
+                    <i class="fas fa-download"></i>
+                    Mon CV
+                </button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-contact">
+        <div class="page-header-content">
+            <h1>Me Contacter</h1>
+            <p>N'hésitez pas à me contacter pour tout projet ou collaboration</p>
+        </div>
+    </section>
+
+    <!-- Contact Container -->
+    <div class="contact-content">
+        
+        <div class="contact-cards">
+            
+            <!-- Email Card -->
+            <div class="contact-card">
+                <div class="contact-icon email-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <a href="#" id="email-link" class="contact-link">Chargement...</a>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card">
+                <div class="contact-icon linkedin-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/mateo-teixeira/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    Mon profil LinkedIn
+                </a>
+            </div>
+
+            <!-- CV Card -->
+            <div class="contact-card">
+                <div class="contact-icon cv-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>Curriculum Vitae</h3>
+                <button class="contact-link contact-button" id="downloadBtnContact">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="contact-cta">
+            <h2>Travaillons Ensemble</h2>
+            <p>Je suis actuellement à la recherche de nouvelles opportunités et collaborations. Si vous avez un projet en tête ou souhaitez simplement échanger, n'hésitez pas à me contacter !</p>
+        </div>
+
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/burgeretpdf.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéo Teixeira - Communication</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/SignatureFull.png" alt="Matéo Teixeira" style="width: 30%;">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Accueil</a>
+                <a href="dev.html">Développement</a>
+                <a href="crea.html">Création Numérique</a>
+                <a href="com.html">Communication</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn-cv" id="downloadBtn">
+                    <i class="fas fa-download"></i>
+                    Mon CV
+                </button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-com">
+        <div class="page-header-content">
+            <h1>Communication</h1>
+            <p>Mes projets de communication digitale et stratégie de contenu</p>
+        </div>
+    </section>
+
+    <!-- Projects Container -->
+    <div class="page-content">
+        
+        <!-- Projet 1 -->
+        <article class="project-detail">
+            <div class="project-detail-image">
+                <img src="../img/chartegraphiqueticolas.png" alt="Charte Graphique Ticolas" class="clickable-image">
+            </div>
+            <div class="project-detail-content">
+                <h2>Une Charte Graphique</h2>
+                <p>L'une de nos premières notions de communication/création en BUT MMI était les chartes graphiques. Un élément important de l'identité de toute organisation qui permet de communiquer son concept, ses principes et ses valeurs.</p>
+                <p>Cette charte graphique simplifiée était l'une des premières que j'ai réalisée avec mon groupe, offrant un nouveau visuel à une enseigne de bistrots pop-up, qui double comme une exposition d'art achetable.</p>
+                <div class="project-tags">
+                    <span class="tag tag-com">Identité Visuelle</span>
+                    <span class="tag tag-com">Branding</span>
+                    <span class="tag tag-com">Charte Graphique</span>
+                </div>
+            </div>
+        </article>
+
+        <hr class="project-separator">
+
+        <!-- Projet 2 -->
+        <article class="project-detail reverse">
+            <div class="project-detail-image">
+                <img src="../img/mockupsurftruck.png" alt="Mockups Surftruck" class="clickable-image">
+            </div>
+            <div class="project-detail-content">
+                <h2>Les Mockups</h2>
+                <p>Dans la même lignée que la charte graphique, un autre élément important à concevoir sont les Mockups. Des représentations imagées et digitales de la nouvelle identité visuelle sur des supports physiques, sans avoir à les faire pour de vrai.</p>
+                <p>L'image (comme le logo) est numériquement appliquée à un objet (merch) pour visualiser le rendu. Ici, quelques mockups pour mon Surftruck de 1ère année.</p>
+                <div class="project-tags">
+                    <span class="tag tag-com">Mockups</span>
+                    <span class="tag tag-com">Merchandising</span>
+                    <span class="tag tag-com">Photoshop</span>
+                </div>
+            </div>
+        </article>
+        
+        <hr class="project-separator">
+
+        <!-- Projet 3 -->
+        <article class="project-detail">
+            <div class="project-detail-image">
+                <img src="../img/pubbanniere.png" alt="Publicité bannière web" class="clickable-image">
+            </div>
+            <div class="project-detail-content">
+                <h2>Une conception de publicité</h2>
+                <p>En deuxième année, nous voyons un peu plus en détail l'art de la publicité. Il nous est donc arrivé de devoir en concevoir nous-même, de différentes façons : Post de réseau social, publicité en affiche, ou en gif.</p>
+                <p>Dans cet exemple, nous devions réaliser une publicité, style réseau comme Facebook ou Instagram. J'ai alors réalisé cette maquette de post pour une entreprise de boost pour start-up, en ayant aussi créé l'image.</p>
+                <div class="project-tags">
+                    <span class="tag tag-com">Publicité Digitale</span>
+                    <span class="tag tag-com">Social Media</span>
+                    <span class="tag tag-com">Marketing</span>
+                </div>
+            </div>
+        </article>
+
+        <hr class="project-separator">
+
+        <!-- Projet 4 -->
+        <article class="project-detail reverse">
+            <div class="project-detail-image">
+                <img src="../img/articlerouen.jpg" alt="Article de presse" class="clickable-image">
+            </div>
+            <div class="project-detail-content">
+                <h2>La rédaction de contenu</h2>
+                <p>Enfin, une autre partie essentielle de la communication, c'est la rédaction. Savoir rédiger pour ne pas perdre son lecteur, bien cibler son public, donner l'information nécessaire et réfléchie.</p>
+                <p>Une formatrice nous a donc proposé de rédiger et mettre en maquette un article qui serait fictivement publié sur le site de Rouen. J'ai choisi un bar à sieste, un concept plutôt original, puis j'ai rédigé l'article ci-contre avec la mise en forme nécessaire.</p>
+                <div class="project-tags">
+                    <span class="tag tag-com">Rédaction Web</span>
+                    <span class="tag tag-com">Content Marketing</span>
+                    <span class="tag tag-com">Éditorial</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- Modal pour agrandir les images -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/burgeretpdf.js"></script>
+    <script src="../js/remontermodale.js"></script>
+</body>
+</html>
