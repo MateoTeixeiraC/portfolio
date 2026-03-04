@@ -478,6 +478,14 @@ nav {
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
+.tech-badge-crea {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.tech-badge-crea:hover {
+    box-shadow: 0 4px 12px rgba(240, 147, 251, 0.4);
+}
+
 /* ===========================
    PAGE CONTENT (pages internes)
    =========================== */
