@@ -60,6 +60,15 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -122,7 +131,6 @@ nav {
     gap: 5px;
     cursor: pointer;
     z-index: 1001;
-    margin-right: 20px;
 }
 
 .burger span {
@@ -134,7 +142,7 @@ nav {
 }
 
 .burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 4.5px);
+    transform: rotate(45deg) translate(8px, 8px);
 }
 
 .burger.active span:nth-child(2) {
@@ -142,7 +150,7 @@ nav {
 }
 
 .burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -3.5px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* ===========================
@@ -187,6 +195,12 @@ nav {
     font-weight: 800;
     margin-bottom: 1rem;
     line-height: 1.2;
+}
+
+.hero-content,
+.hero-image {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
 }
 
 .hero-content .subtitle {
@@ -418,6 +432,53 @@ nav {
 }
 
 /* ===========================
+   TECH STACK SECTION
+   =========================== */
+
+.tech-stack {
+    background: var(--card-bg);
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tech-stack-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.tech-stack h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.tech-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.tech-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* ===========================
    PAGE CONTENT (pages internes)
    =========================== */
 
@@ -481,6 +542,19 @@ nav {
     transform: scale(1.05);
 }
 
+.project-detail-video {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
 .project-detail-content {
     padding: 1rem;
 }
@@ -493,7 +567,7 @@ nav {
 }
 
 .project-detail-content p {
-    color: var(--secondary);
+    color: var(--text-light);
     line-height: 1.8;
     margin-bottom: 1rem;
 }
@@ -545,7 +619,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary);
-    background: linear-gradient(135deg, rgba(89, 0, 255, 0.1) 0%, rgba(255, 0, 234, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
     border-radius: 12px;
     margin-top: 2rem;
 }
@@ -824,6 +898,15 @@ nav {
     .contact-cta p {
         font-size: 1.1rem;
     }
+
+    .tech-stack h3 {
+        font-size: 1.1rem;
+    }
+
+    .tech-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
 }
 
 /* Mobiles */
@@ -936,12 +1019,4 @@ nav {
         bottom: 1.5rem;
         right: 1.5rem;
     }
-}
-
-
-.project-separator {
-    border: none;
-    border-top: 2px solid grey;
-    margin-bottom: 30px;
-    opacity: 0.3;
 }

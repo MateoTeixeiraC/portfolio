@@ -1,4 +1,28 @@
 // ===========================
+// EFFET PARALLAXE
+// ===========================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroImage = document.querySelector('.hero-image img');
+    const heroContent = document.querySelector('.hero-content');
+    
+    if (heroImage && heroContent) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroSection = document.querySelector('.hero');
+            
+            // Appliquer l'effet seulement dans la section hero
+            if (heroSection && scrolled < heroSection.offsetHeight) {
+                // L'image se déplace plus lentement (0.5x)
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+                // Le contenu se déplace légèrement plus vite (0.3x)
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    }
+});
+
+// ===========================
 // BURGER MENU
 // ===========================
 
