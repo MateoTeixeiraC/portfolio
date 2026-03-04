@@ -25,8 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
         downloadBtnContact.addEventListener('click', function(e) {
             e.preventDefault();
             
-            const pdfUrl = 'CV_Mateo_Teixeira_2025.pdf';
-            const fileName = 'CV_Mateo_Teixeira_2025.pdf';
+            // Détecter si on est dans un sous-dossier
+            const isInSubfolder = window.location.pathname.includes('/html/');
+            const pdfPath = isInSubfolder ? '../' : '';
+            
+            const pdfUrl = pdfPath + 'CV_Mateo_Teixeira_2026.pdf';
+            const fileName = 'CV_Mateo_Teixeira_2026.pdf';
             
             // Créer un lien temporaire pour le téléchargement
             const link = document.createElement('a');
